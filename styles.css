@@ -1,25 +1,55 @@
 body{
-    margin: 0px;
-
+    margin: 0;
 }
 .take-container{
-    background-image: url("assets/imagees/background-masthead.png");
-    background-repeat: round;
-    display: flex;
+    background-image: url("assets/images/background-masthead.png");
+    background-repeat: no-repeat;
     width: 100%;
     height: 700px;
     background-size: cover;
 }
-
+.take-container .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    max-width: 75%;
+    margin: auto;
+}
 .take-content{
     width: 100%;
 }
+.take-container .picture-iphone {
+    width: 50%;
+    position: relative;
+    top: 230px;
+}
+.take-container .big-title h2 {
+    color: white;
+    font-weight: lighter;
+    font-size: 45px;
+}
+.take-container .big-title .description {
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    width: 90%;
+}
 .logo-items{
+    position: relative;
+    top: -200px;
+    color: white;
     display: flex;
     align-items: center;
     gap: 8px;
-    right: 200px;
-    margin-left: 100px;
+
+}
+.logo-items b {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'merriweather', serif;
 }
 
 /****** POLICE *****/
@@ -40,63 +70,18 @@ url("assets/fonts/merriweather/Merriweather-Regular.ttf");
     font-family: 'open_sans';
     src: url("assets/fonts/open_sans/static/OpenSans/OpenSans-Light.ttf");
 }
-
 body p{
     margin: 0;
     font-size: 14px;
 }
-.logo-description{
-    font-style: italic;
-    color: white;
-    font-size: 18px;
-    font-family: 'merriweather';
-}
 .picture-logo{
     height: 30px;
 }
-header{
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-.block-content{
-    color:white;
-}
-.take-content section{
-    display: flex;
-
-}
-.take-content section .block-content{
-    width: 60%;
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
-}
-.take-content section .block-content .big-title{
-   width: 46%;
-}
-.take-content section .block-content .description{
-    font-size: 14px;
-    font-weight: lighter;
-}
-.take-content section .block-content h2{
-    font-weight: lighter;
-    font-size: 45px;
-}
-.take-container .picture-iphone {
-    top: 190px;
-    width: 430px !important;
-    position: relative;
-    right: 124px;
-}
-.take-content section .block-container{
-    width: 40%;
-    display: block;
-}
 .something-content .corporis-1{
-    margin-top: 0px!important;
+    margin-top: 0!important;
 }
 .something-content .corporis-2{
-    margin-top: 0px!important;
+    margin-top: 0!important;
 }
 .something-content .container .row:first-child{
     margin-top: 75px;
@@ -118,7 +103,7 @@ header{
 .something-content .container{
     padding: 0!important;
 }
-    /************grid box****************/
+    /****grid box*****/
 
 #gridBox{
     height: 500px;
@@ -141,7 +126,7 @@ header{
 }
 #gridBox .container .row .clients{
     font-size: 0.7em;
-    background-image: url("assets/imagees/photo1.png");
+    background-image: url("assets/images/photo1.png");
     color: white;
     background-size: cover;
 }
@@ -162,7 +147,7 @@ header{
 }
 .container .row .sign{
     color:#ffffff;
-    background-image: url("assets/imagees/photo2.png");
+    background-image: url("assets/images/photo2.png");
     font-size: 0.7em;
 }
 .container .row .pictures{
@@ -172,7 +157,7 @@ header{
 }
 .container .row .something{
     color:#ffffff;
-    background-image: url("assets/imagees/photo3.png");
+    background-image: url("assets/images/photo3.png");
     font-size: 0.7em;
     background-size: cover;
 }
@@ -212,7 +197,7 @@ margin-bottom: 80px;
 /*****Full Image*****/
 
 #FullImage{
-    background-image: url("assets/imagees/photo-voiture.png");
+    background-image: url("assets/images/photo-voiture.png");
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -257,8 +242,6 @@ margin-bottom: 80px;
 #Reasons .container .row .container h2{
     padding: 20px;
 }
-
-
 /*****Reasons to get onboard*****/
 #takpap{
     padding-bottom: 80px;
@@ -295,10 +278,55 @@ margin-bottom: 80px;
 }
 
 /******responsive*****/
-@media screen and (max-width: 1116px){
+@media screen and (max-width: 1920px) {
     .take-container {
-        width: 100%;
+        height: 1000px;
     }
+    .take-container .picture-iphone {
+        width: 590px!important;
+        position: relative;
+        top: 380px!important;
+    }
+}
+@media screen and (max-width: 1650px) {
+    .take-container {
+        height: 900px!important;
+    }
+    .take-container .picture-iphone {
+        width: 550px!important;
+        position: relative;
+        top: 340px!important;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .take-container {
+        height: 800px!important;
+    }
+    .take-container .picture-iphone {
+        width: 500px!important;
+        position: relative;
+        top: 290px!important;
+    }
+}
+@media screen and (max-width: 1330px) {
+    .take-container {
+        height: 700px!important;
+    }
+    .take-container .picture-iphone {
+        top: 235px!important;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .take-container {
+        height: 650px!important;
+    }
+    .take-container .picture-iphone {
+        top: 235px!important;
+        width: 440px!important;
+    }
+}
+@media screen and (max-width: 1116px){
+
     .take-content section .block-content .big-title {
         width: 50%;
     }
@@ -315,78 +343,52 @@ margin-bottom: 80px;
     .take-content section .block-content {
         margin-left: 78px;
     }
-    .logo-items {
-        margin-left: 78px;
-    }
 }
-@media screen and (max-width: 1110px){
-    .take-content section .block-content h2 {
-        font-size: 42px;
-    }
-}
-
-@media screen and (max-width: 1040px){
-    .take-content section .block-content h2 {
-        font-size: 38px;
-    }
-}
-@media screen and (max-width: 1030px){
-    .container{
-        max-width: 870px!important;
-        margin: auto!important;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    .container{
-        max-width: 810px!important;
-        margin: auto!important;
-    }
-}
-@media screen and (max-width: 990px){
-    .container{
-        max-width: 875px!important;
-        margin: auto!important;
-    }
+@media screen and (max-width: 992px){
     .something-content .corporis-1{
-                margin-top: -143px!important;
-            }
+        margin-top: 20px!important;
+    }
     .something-content .corporis-2{
-        margin-top: -127px!important;
+        margin-top: 20px!important;
+    }
+    #gridBox .container .row .col-md-3 {
+        width: 100%;
     }
     #takpap .container .row .col-md-6{
         width: 100% !important;
     }
-}
-@media screen and (max-width: 960px){
-    .take-content section .block-content h2 {
-        font-size: 36px;
+    .take-container .picture-iphone {
+        display: none;
     }
-}
-@media screen and (max-width: 950px){
-    .container{
-        max-width: 800px!important;
-        margin: auto!important;
+    .container .row {
+        display: flex!important;
+        flex-direction: column!important;
     }
-}
-@media screen and (max-width: 920px){
-    .take-content section .block-content h2 {
-        font-size: 33px;
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100% !important;
     }
-}
-@media screen and (max-width: 852px){
-    .take-content section .block-content h2 {
-        font-size: 32px;
+    .logo-items {
+        top: -190px!important;
     }
-}
-@media screen and (max-width: 850px){
-    .container{
-        width: 90% !important;
+    .block-content {
+        position: relative;
+        top: 250px;
     }
-}
-@media screen and (max-width: 830px){
-    .take-content section .block-content h2 {
-        font-size: 30px;
+    .take-container .big-title .description {
+        width: 60%;
+    }
+    #gridBox {
+        height: 1700px;
+    }
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 100% !important;
+    }
+
+    #AooAt .container .row {
+        display: grid!important;
+        grid-template-columns: 1fr 1fr!important;
     }
 }
 @media screen and (max-width: 810px){
@@ -416,9 +418,6 @@ margin-bottom: 80px;
     .something-content .row .col-md-6{
         margin-bottom: 20px;
     }
-    .container{
-       width: 89%!important;
-    }
     #Reasons {
         height: 640px;
     }
@@ -435,14 +434,14 @@ margin-bottom: 80px;
         display: none;
     }
     .something-content .corporis-1{
-        margin-top: 0px!important;
+        margin-top: 0!important;
     }
     .something-content .corporis-2{
-        margin-top: 0px!important;
+        margin-top: 0!important;
     }
 }
 @media screen and (max-width: 767px){
-    
+
 }
 @media screen and (max-width: 690px){
     .take-content section .block-content .big-title {
